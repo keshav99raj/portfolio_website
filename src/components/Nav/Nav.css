@@ -1,0 +1,115 @@
+nav{
+    width:100%;
+    height:80px;
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+    padding:40px;
+    position:fixed;
+    z-index: 1000;
+    background-color: rgb(15, 19, 22);
+     overflow: hidden;
+
+
+}
+.active{
+    color: rgb(5, 167, 167);
+    border-bottom: 2px solid white;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    color:white;
+    list-style: none;
+    font-size:20px;
+
+}
+
+
+nav ul a{
+    cursor:pointer;
+}
+
+nav ul a:hover{
+     color: rgb(5, 167, 167);
+    border-bottom: 2px solid white;
+}
+
+nav h1{
+
+    font-size: 30px;
+    background:linear-gradient(to right,rgb(3, 159, 231),white);
+    background-clip:text;
+    color:transparent;
+
+}
+.hamburger{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    gap:8px;
+    display: none;
+    cursor: pointer;
+}
+
+.ham{
+    width:40px;
+    height:2px;
+    background-color: aliceblue;
+}
+
+
+.mobilemenu{
+
+    position:absolute;
+    top:80px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(9, 23, 36, 0.377);
+    backdrop-filter: blur(7px);
+    right: 0;
+    transform: translateX(100%);
+    flex-direction: column;
+    transition: all 0.5;
+    gap:40px;
+    
+
+}
+.changehamburger :nth-child(1)
+{
+    transform:rotate(45deg) translate(7px,7px) ;
+    transition:all 0.4s ease;
+}
+.changehamburger :nth-child(3){
+    transform: rotate(-45deg) translate(7px,-7px);
+    transition: all 0.4s ease;
+}
+.changehamburger :nth-child(2)
+{
+  opacity:0;
+  transition:all 0.2s ease;
+}
+
+.activemobile{
+  
+    transform:translateX(0%);
+    
+
+}
+
+ 
+@media(max-width:750px){
+
+    .desktopmenu{
+        display: none;
+    }
+    .hamburger{
+        display:flex;
+    }
+
+}

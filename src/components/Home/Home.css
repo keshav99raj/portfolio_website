@@ -1,0 +1,127 @@
+#home{
+    width:100%;
+    height:100vh;
+    display: flex;
+    /* background-col
+    or: aqua;; */
+    padding:4%;
+     overflow: hidden;
+}
+.lefthome{
+    width:50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+
+
+}
+
+.homedetail{
+    font-size:2vmax;
+}
+.homedetail button{
+    padding:10px 30px;
+    background-color:rgb(66,180,205);
+    color:black;
+    border:2px solid rgb(66,180,205);
+    margin-top:30px;
+    border-radius: 20px;
+    font-size: 19px;
+    width: 140px;
+    cursor: pointer;
+    transition:all 0.5s;
+
+}
+.homedetail button:hover{
+    background-color: transparent;
+    color:rgb(66,180,205);
+    
+}
+
+@media (max-width:750px){
+    #home{
+        
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;
+        padding:0%;
+
+       
+        
+
+    }
+
+    .lefthome{
+    
+        width:100%;
+        height: 50vh;
+    }
+    .righthome{
+        width:100% !important;
+        height: 50vh !important;
+        
+        display:flex;
+        flex-direction: center;
+        justify-content: center;
+        align-items: end;
+       
+    
+    }
+    .righthome img{
+        flex-shrink: 0.5;
+        height:30vw;
+        
+        
+       
+    
+    }
+   
+
+
+}
+
+
+
+.line1{
+    font-size: 0.8em;
+}
+.line2{
+    font-size:2.5em;
+background: linear-gradient(to right,rgb(66,180,205),white);
+background-clip:text;
+color:transparent;
+
+}
+.line3{
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+.line3 button{
+
+}
+
+
+
+
+.righthome{
+
+    width:50%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.righthome img{
+   width:90%;
+   
+   filter:drop-shadow(2px 2px 20px rgb(97, 182, 216));
+   
+ 
+
+}
